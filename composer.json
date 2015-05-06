@@ -1,0 +1,36 @@
+{
+	"name": "clausi/pmcleaner",
+	"type": "phpbb-extension",
+	"description": "Extensions for phpBB to delete private messages with one click.",
+	"homepage": "https://github.com/Clausi/phpbb-pmcleaner",
+	"version": "1.0.0",
+	"time": "2015-05-05",
+	"keywords": ["phpbb", "extension", "private message", "clean", "delete"],
+	"license": "GPL-2.0",
+	"authors": [
+		{
+			"name": "Clausi",
+			"homepage": "https://github.com/Clausi",
+			"email": "support@cklausi.de",
+			"role": "Developer"
+		}
+	],
+	"require": {
+		"php": ">=5.3.3",
+                "composer/installers": "~1.0"
+	},
+	"require-dev": {
+		"phpbb/epv": "dev-master"
+	},
+	"extra": {
+		"display-name": "PM Cleaner",
+		"soft-require": {
+			"phpbb/phpbb": "3.1.*"
+		},
+		"version-check": {
+			"host": "version.cklausi.de",
+			"directory": "/version",
+			"filename": "phpbb-pmcleaner.json"
+		}
+	}
+}

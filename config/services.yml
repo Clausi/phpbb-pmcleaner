@@ -1,0 +1,14 @@
+services:
+    clausi.pmcleaner.listener:
+        class: clausi\pmcleaner\event\main_listener
+        arguments:
+            - @controller.helper
+            - @template
+            - @config
+            - @auth
+            - @request
+            - @user
+            - %core.root_path%
+            - %core.php_ext%
+        tags:
+            - { name: event.listener }
